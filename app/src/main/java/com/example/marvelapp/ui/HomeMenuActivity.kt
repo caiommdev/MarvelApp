@@ -1,5 +1,6 @@
 package com.example.marvelapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.marvelapp.R
@@ -22,12 +23,13 @@ class HomeMenuActivity : AppCompatActivity() {
 
     private fun setup() {
         binding.apply {
+            val intent = Intent(this@HomeMenuActivity,CharactersList::class.java)
             homeMenuButtonCharacters.setOnClickListener {
-                //TODO:
+                startActivity(intent)
             }
 
             homeMenuButtonSeries.setOnClickListener {
-                //TODO:
+                startActivity(intent)
             }
         }
     }
