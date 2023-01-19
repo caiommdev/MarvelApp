@@ -7,6 +7,7 @@
     android:weightSum="10">
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/home_menu_marvel_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -18,6 +19,7 @@
         />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_menu_button_characters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -33,6 +35,7 @@
         />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_menu_button_series"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
