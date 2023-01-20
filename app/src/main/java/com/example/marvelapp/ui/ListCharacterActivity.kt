@@ -1,5 +1,6 @@
 package com.example.marvelapp.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.marvelapp.databinding.ActivityListCharacterBinding
@@ -24,7 +25,7 @@ class ListCharacterActivity : AppCompatActivity() {
 
     private fun setup() {
         binding.apply {
-            listItems.adapter = listAdapter
+            listItem.adapter = listAdapter
         }
         createData()
     }
@@ -39,6 +40,8 @@ class ListCharacterActivity : AppCompatActivity() {
     }
 
     private fun onItemSelected(item: Character){
-
+        intent = Intent(this, CharacterDetailsActivity::class.java)
+        intent.putExtra(CharacterDetailsActivity.CHARACTER, item)
+        startActivity(intent)
     }
 }
