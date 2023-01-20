@@ -22,8 +22,8 @@ class HomeMenuActivity : AppCompatActivity() {
     }
 
     private fun setup() {
+        val intent = Intent(this,ListCharacterActivity::class.java)
         binding.apply {
-            val intent = Intent(this@HomeMenuActivity,CharactersList::class.java)
             homeMenuButtonCharacters.setOnClickListener {
                 startActivity(intent)
             }
