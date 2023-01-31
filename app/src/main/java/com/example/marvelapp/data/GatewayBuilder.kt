@@ -14,5 +14,9 @@ object GatewayBuilder {
         Retrofit.Builder()
             .baseUrl("")
             .addConverterFactory(json.asConverterFactory(contentType))
+            .build()
     }
+
+    inline fun <reified T> build(): T =
+        retrofit.create(T::class.java)
 }

@@ -13,13 +13,13 @@
         android:theme="@style/Theme.MarvelApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.CharacterDetailsActivity"
+            android:name=".ui.characters.CharacterDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.ListCharacterActivity"
+            android:name=".ui.characters.ListCharacterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.HomeMenuActivity"
+            android:name=".ui.home.HomeMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

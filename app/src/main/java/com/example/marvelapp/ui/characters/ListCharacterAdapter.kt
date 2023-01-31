@@ -1,14 +1,13 @@
-package com.example.marvelapp.ui
+package com.example.marvelapp.ui.characters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.marvelapp.databinding.ItemRowBinding
 
 
-class ListAdapter:
-    RecyclerView.Adapter<ListAdapter.ViewHolder>() {
+class ListCharacterAdapter:
+    RecyclerView.Adapter<ListCharacterAdapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: ItemRowBinding): RecyclerView.ViewHolder(binding.root)
     var onClick: ((Character) -> Unit)? = null

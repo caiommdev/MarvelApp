@@ -1,4 +1,4 @@
-package com.example.marvelapp.ui
+package com.example.marvelapp.ui.characters
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -10,8 +10,8 @@ class ListCharacterActivity : AppCompatActivity() {
     lateinit var binding: ActivityListCharacterBinding
     private var item: MutableList<Character> = mutableListOf()
 
-    private val listAdapter: ListAdapter by lazy {
-        ListAdapter().apply {
+    private val listAdapter: ListCharacterAdapter by lazy {
+        ListCharacterAdapter().apply {
             onClick = this@ListCharacterActivity::onItemSelected
         }
     }

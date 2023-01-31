@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ListCharacterActivity">
+    tools:context=".ui.characters.ListCharacterActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/tool_bar"
@@ -26,7 +26,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_row"
+        tools:listitem="@layout/item_row_series"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

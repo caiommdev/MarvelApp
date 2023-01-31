@@ -1,4 +1,4 @@
-package com.example.marvelapp.ui
+package com.example.marvelapp.ui.characters
 
 import java.io.Serializable
 
